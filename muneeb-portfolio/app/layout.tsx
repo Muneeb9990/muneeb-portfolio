@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import type { Metadata } from 'next'
 import './globals.css'
 
@@ -91,6 +92,7 @@ export default function RootLayout({
       </head>
       <body className="bg-animated noise antialiased">
         {children}
+        <Analytics />
       </body>
     </html>
   )

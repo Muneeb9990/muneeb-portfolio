@@ -25,7 +25,6 @@ export default function Hero() {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
     >
-      {/* Radial glow behind name */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full pointer-events-none"
         style={{
@@ -37,10 +36,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
 
-          {/* Left — Text content */}
           <div className="relative z-10 order-2 lg:order-1">
-
-            {/* Status pill */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -53,7 +49,6 @@ export default function Hero() {
               </span>
             </motion.div>
 
-            {/* Name */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
@@ -68,7 +63,6 @@ export default function Hero() {
               </h1>
             </motion.div>
 
-            {/* Typing animation */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -93,7 +87,6 @@ export default function Hero() {
               <span className="font-mono text-[#22d3ee] ml-0.5 animate-pulse">_</span>
             </motion.div>
 
-            {/* Bio */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -107,7 +100,6 @@ export default function Hero() {
               freelance projects and full-time opportunities.
             </motion.p>
 
-            {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -145,7 +137,6 @@ export default function Hero() {
               </motion.button>
             </motion.div>
 
-            {/* Stats row */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -167,22 +158,18 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Right — Avatar / visual element */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4, duration: 1, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="relative flex justify-center items-center order-1 lg:order-2"
           >
-            {/* Outer ring */}
             <div
-              className="absolute w-[380px] h-[380px] rounded-full border border-dashed border-[#22d3ee]/10 animate-orbit-slow"
+              className="absolute w-[380px] h-[380px] rounded-full border border-dashed border-[#22d3ee]/10"
               style={{ animation: 'spin 30s linear infinite' }}
             />
 
-            {/* Avatar container */}
             <div className="relative w-72 h-72 sm:w-80 sm:h-80">
-              {/* Glow ring */}
               <div
                 className="absolute inset-0 rounded-full"
                 style={{
@@ -192,27 +179,25 @@ export default function Hero() {
                   animation: 'spin 6s linear infinite',
                 }}
               />
-              {/* Avatar inner */}
               <div
                 className="absolute inset-[3px] rounded-full overflow-hidden glass flex items-center justify-center"
                 style={{
                   background: 'linear-gradient(135deg, rgba(34,211,238,0.1), rgba(167,139,250,0.08))',
                 }}
               >
-                {/* Initials placeholder — replace with <Image> when you have a photo */}
-                <div className="text-center">
                 <img
-                   src="/profile.jpg"
-                   alt="Muneeb Iqbal"
-                   style={{
-                     width: '100%',
-                     height: '100%',
-                     objectFit: 'cover',
-                     borderRadius: '50%',
-  }}
-/>
+                  src="/profile.jpg"
+                  alt="Muneeb Iqbal"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    borderRadius: '50%',
+                  }}
+                />
+              </div>
+            </div>
 
-            {/* Floating tech badges */}
             {techBadges.map(badge => (
               <motion.div
                 key={badge.label}
@@ -240,7 +225,6 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

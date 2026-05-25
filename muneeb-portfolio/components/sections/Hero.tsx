@@ -201,22 +201,16 @@ export default function Hero() {
               >
                 {/* Initials placeholder — replace with <Image> when you have a photo */}
                 <div className="text-center">
-                  <div
-                    className="font-display text-7xl font-800"
-                    style={{
-                      background: 'linear-gradient(135deg, #22d3ee, #a78bfa)',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent',
-                    }}
-                  >
-                    MI
-                  </div>
-                  <div className="font-mono text-xs text-white/30 tracking-[0.3em] mt-1">
-                    DEV
-                  </div>
-                </div>
-              </div>
-            </div>
+                <img
+                   src="/profile.jpg"
+                   alt="Muneeb Iqbal"
+                   style={{
+                     width: '100%',
+                     height: '100%',
+                     objectFit: 'cover',
+                     borderRadius: '50%',
+  }}
+/>
 
             {/* Floating tech badges */}
             {techBadges.map(badge => (
